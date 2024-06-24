@@ -19,7 +19,7 @@ Gerne können auch weitere Schaltungen erstellt werden und in einem Github Repos
 
 Der hier dargestellte Strom- und Spannungsteiler ist von Folie 38 aus Kapitel 02: Grundlagen Elektrotechnik. Die Schaltung findet ihr in: `spannungsteiler.circuitjs.txt`
 
-![Spannungsteiler](/Users/joshua/university/M.Sc.IT Security/CricomTutor/circuit simulation (1cp)/cricom-circuit-simuations/gfx/Spannungsteiler-labeled.png)
+![Spannungsteiler](gfx/Spannungsteiler-labeled.png)
 
 **Fragen:**
 
@@ -33,7 +33,7 @@ Der hier dargestellte Strom- und Spannungsteiler ist von Folie 38 aus Kapitel 02
 
 Auf Slide 45 findet ihr ein Beispiel zu Kondensatoren der auf dem Breadboard nachgebaut werden kann. Die Schaltung findet ihr in `kondensator-frage9.circuitjs.txt`
 
-![Kondensator Beispiel](/Users/joshua/university/M.Sc.IT Security/CricomTutor/circuit simulation (1cp)/cricom-circuit-simuations/gfx/Kondensator Beispiel.png)
+![Kondensator Beispiel](gfx/Kondensator Beispiel.png)
 
 1. Welchen Einfluss hat die Kapazität des Kondensators auf die Leuchtdauer der LED? 
 
