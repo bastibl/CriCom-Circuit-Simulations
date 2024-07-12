@@ -193,34 +193,14 @@ Oben haben wir schon einen Einweggleichrichter gesehen. Hier setzen wir das selb
 
 ## Schaltungen aus Kapitel 3: Elektrotechnik, Transistoren und Oszillatoren
 
-- Simulation (slide 15) [multisim link](https://www.multisim.com/content/WZAKpLavpFaADQBNrEhb35/transistor/open:) leider kein gute alternative gefunden 
-- Frage #16 (slide 18)
-- 
-- slide 26 ff. basisvorspannung nachbauen? (Frage #18, Frage #17)
-  - Welche Spannungsquelle können wir stattdessen für Uoffset nutzen? Wie?
-  - Welches Problem entsteht, wenn Ue direkt an die Basis angeschlossen wird?
-  - Was passiert wenn man $U_e$ einfach an die Basis anschlist? -> Kurzschluss
-    - Wie kann man dieses Problem umgehen? -> Kondensator (s.30)
-
-  - Welchen Vorteil bietet ein zusätzlicher Spannungsteiler? wird durch Schwankungen weniger beeinflusst. (s.31)
-- Sättigungsbereich (s.40)
-  - Was passiert wenn an der Basis eine zu hohe Spannung anliegt?
-- - - - 
-- Vollständige Emitterschaltung als Verstärker (s.52)
-  - Was passiert bei hohen Frequenzen? 
-  - Wie können wir das Problem lösen? spezielle RF-Transistoren mit kleinerer Kapazität -> verringert den Effekt parasitärer Kapazitäten
-  - Welche Option gibt es wenn eine einzelne Verstärkerschaltung nicht aussreicht? -> Hintereinanderschalten von mehreren Verstärkerstufen
-  - [Schaltung von s. 55 ](https://www.multisim.com/content/ni8cHfAF63z7RCYVk4gkuR/hohe-frequenzen/open:) und google doc
-- 
-
 ## Transistoren 
 
-[PNP Transistor Explanation falstad](https://www.falstad.com/circuit/e-pnp.html) 
+[Hier](https://www.falstad.com/circuit/e-pnp.html) findet Ihr eine Erklärung und Einführung zu PNP Transistoren. 
 
-### Als Schalter 
+### Transistoren als Schalter 
 
-- öffne die Schaltung: circuits -> Transistors -> Switch
-- [beispiel von transistor als schalter](https://www.falstad.com/circuit/e-transswitch.html)
+- öffne die Schaltung: `Circuits -> Transistors -> Switch`
+- [Beispiel von transistor als schalter](https://www.falstad.com/circuit/e-transswitch.html)
 
 ![Transistor als Schalter](gfx/Transistor als Schalter.png)
 
@@ -230,76 +210,88 @@ Oben haben wir schon einen Einweggleichrichter gesehen. Hier setzen wir das selb
 
 #### Emitterschaltung 
 
-- 
+[Schaltung](http://falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcA2aAOMB2ALGXyEw1sESQFJzzKEBTAWjDACgB3EAJgWRAE4eAzAg58ekZgCdO3UdJ5heIytgLMALiAGRs4RZuG6l4KNGSYOmAeaHI0QhA5PJ+2NJgWRMaB25Ec4IAAmtABmAIYArgA2aswAxpyQaIZyKZQw8HAQ9DCYkAjEAt6QCoS8AkqwJcwASonJCiJgyJSNUMbY6bAQ6SZgCLz92LzYWorMAOb6fknTnObt4nVCIvwg+LK9neC9XQjMAPLrFeCYPMINZ4uSc2sr4Ng6rfDxc1g8o01XXZklJpAcKwUJgCZBWOxoQECf7VdhceR6LQ6NriKSfU4fE7w9pgF5TdHYgloZLpNhvR5vb7MTrQ97zERIzSg9ocAD6yGwrM5YA4HF4kFZMGc7gwRUeCmcTEFVRKrMYrLArIAQmEAM60AA0AB1VQA1amQaEqHSuch6JhGNkc9kK3n86UA7DmQ04AROty8QiYB1ZOWKxUAYQA9lEorQ4mogxJtXqDdDSMiKWYZiSQN7rQKeXyBRk4PxzCQOMgzJh3AhMAgfbL5SwgA): `Emitterschaltung.circuitjs.txt`
 
-- Was wird bei einer Emitterschaltung verstärkt (s.39)? Strom Ja, Spannung ja
-- Um welchen Faktor? 200
-- Graphen anzeigen wie auf slide 39
-- Beispiel Falstad [common-emitter amplifier](https://www.falstad.com/circuit/e-ceamp.html)
+Ein weiteres Beispiel von Falstad direkt ist der [Common-Emitter Amplifier](https://www.falstad.com/circuit/e-ceamp.html)
 
 ![Emitterschaltung](gfx/Emitterschaltung.png)
 
-1. Was wird bei der Emitterschaltung verstärkt? 
+1. Was wird bei der [Emitterschaltung](http://falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcA2aAOMB2ALGXyEw1sESQFJzzKEBTAWjDACgB3EAJgWRAE4eAzAg58ekZgCdO3UdJ5heIytgLMALiAGRs4RZuG6l4KNGSYOmAcmxoB-LPhPJ+Ngr229sHDDo5wQACa0AGYAhgCuADZqzADGnJBohnLJlDDwcBD0MJiQ1mAcdgrYuZ5I6ZAsAEoJSQoiYMiU9VDG2GmwEGkmYAi8vdieWorMAOb6In5JQpPmreI1M7KO-PMg7eDdHQjMAPLrAg2YPMJ1x-OSE7JLeDrN8HFXWDzYh+DnHRmVJpCFmBQcaxoSwCLxEH6VNgpFpaHQtcRSV5HF5vLhiTZwMYHSYyJGcNBJNJQm7YHQ3D7MdoCd48CwiWGaKytDgAfWsLOwLIKHHcLJgziBBNyBEwaGQyDQfNgmRZjC5LIAQqEAM60AA0AB1lQA1SmQakqHQ2ch6JhGVns5Bcjg8yBS34Cf6Jdr5MB2YFWiqVWVgeUAYQA9pFIrRYmoAxJNTq9dTSHDSSAzJNEq1MGzOXbubyvb6cz6ucwgA) verstärkt? Begründe deine Antwort.
 
 
 
 #### Kollektorschaltung
 
-Beispiel von Falstad: [emitter follower / buffer amplifier circuit](https://www.falstad.com/circuit/e-follower.html)
+[Schaltung](https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcA2aAOMB2ALGXyEw1sESQFJzzKEBTAWjDACgB3EAJgWRAE4eAzAg58ekZgCdO3UdJ5heIytgLMALiAGRs4RZuG6l4EPRjaBHbJF4DkYBBTtox0Ah168EWjmgS9s2AIQYHAgACa0AGYAhgCuADZqzADGnJBohnKZlGbwkBD0vND+mM52mMi8WJAIGbksAEppGQoiYMiUrVDGVlCwEDl99lWk-lqKzADm+iIcmCJCCxyD4k2Lsviyg70h3TnQCMwA8iCBs+nkPs17kjPX63NGIXApd8sZZ9f7efl80FoCCqAjq8XzYTx9OAsdhceR6LQ6Lriaafd6nCyaZY3djrfh3LBiZhWATgCqceaabSaWzdDgAfWQ2DpTLAHHckDpMAIWjg2EwHkgAmB9Ny+TpjDpYDpACFogBnWgAGgAOnKAGpEwWnRmnDJ+Nqs2kMpnISVs3gcrn8UFeHDYDhBNAi2BQ8VSqUAYQA9vF4rRkmovRIVerNSTSIiycgKZZBphjZyzezOS6xaKpRKWPaSUISfYkF4DXUiQ7KYi9JYkBxo1BmEA): `Kollektorschaltung.circuitjs.txt`
+
+Ein weiteres Beispiel von Falstad ist der [Emitter Follower or Buffer Amplifier Circuit](https://www.falstad.com/circuit/e-follower.html)
 
 ![Kollektorschaltung](gfx/Kollektorschaltung.png)
 
-- Was wird bei einer Kollektorschaltung verstärkt?
+- Was wird bei einer [Kollektorschaltung](http://falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcA2aAOMB2ALGXyEw1sESQFJzzKEBTAWjDACgB3EAJgWRAE4eAzAg58ekZgCdO3UdJ5heIytgLMALiAGRs4RZuG6l4EPRjaOHLHC7Y0vLZl5RoBDr3cJMYTxkxpwcCAAJrQAZgCGAK4ANmrMAMackP4KIlzyepRm8JAQ9LzQ-AikAry5jpgIvEjZLABKSSl6YMiUqVDG2FmwEFnO3rze2LzYWorMAOb6aZgiQnMcfeIN87L4sn1dAR3dCMwA8iCjacnkHP6L-lmS0423HLMdYPAJ96fHd905uXzQWth+ATYLhoWZ2XqwXJsOSGTTaWHiKYfS5HAQLJbQ1b8W5YMTMLoCcCYHgPObwgQCMScAD6yGw1PpYAsZWpMAIWjgAPckApxI4rMhuWpjGpYGpACFwgBnWgAGgAOlKAGr4nlHOlHfxVERMIz8um00XMyAC5D8XhoBACHDAtHeTAC+BikVigDCAHtotFaPE1O6JArlarCaQdLiQMhHhwtpQHQaTUy3CbskKU86xSxbfpCd4kFadUQoPiOIT-rDo0gOJGi0A) verstärkt?
 - Begründe deine Antwort
 
 
 
 #### Basisschaltung 
 
+[Schaltung](https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcA2aAOMB2ALGXyEw1sESQFJzzKEBTAWjDACgAnEAJgWXAE4PO3TmjRROmSMwDGnSKLD9BPBQMox4kbJhD0YODvkwLkBXtkgBmKLEgsASrPmKwySirERz122LXQwCLwB2GYWkPzMAO5KfAJh2LFQzAAuIBYclAaU6W6KbjoI-mBwIukWImiEvNZotpbxxfAB4HAgAM4ADgCWUgwAJrQAZgCGAK4ANsnMAOYxHCIx8b7SaRmcXjnCon7wHAJg0AgUlZAcvCJYmK7bNizRXDzzoptPSdEvG8TralGrmQvlBKvSTsQHfNJfYEgNAZSQObDpVYgbC1JFqZFudF+BC-CwWZSKBH7PIrImJEIE1TeDRgKyoZC8ZBXBAcTBoa55W5sZGM8m8qGNSTRClbCFAhYg5GI9xkxFuWG-WVxL5y7lgxFgrJiCy8eDMADyPMp5FciR+hoyTgElvA82WAA91hBGpwmS0rAkwAIAJIAOw6oym2A4Vi1xSBe3ARCSAHs+CBkAl5WcdhYEDCMPisLxGSZquo4BA3Mw42tE2JzOdvDrIMguNZneAQF1-YHmEA): `Basisschaltung.circuitjs.txt`
+
+![Basisschaltung](gfx/Basisschaltung.png)
+
+- Was wird bei einer [Basisschaltung](http://falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcA2aAOMB2ALGXyEw1sESQFJzzKEBTAWjDACgAnEAJgWXAE4PO3TmjRROmSMwDGnSKLD9BPBQMox4kbJhD0YOBAGYumBB2TZeaBLyixILAEqz5isMkoqxEbGtgQ1tmDWQRbYBpD8zADuSnwC4dhxUMwALiBGlBw+6Rweih46CLAS7hxoyMj8GAaiMGj24eYYmLwGCJjI2mBwIADOAA4AllIMACa0AGYAhgCuADYpzADmsWWiXDwJYpIyGZzZe2vbdpAcAmDQCBTE2BYcCuEiier20asiOZkfkjGHB8T7NRvQ4fGqJI6SdhgwHpAEQkBoXKSJxheICbD1HLbEDZbrYmAIYEGZSKVFJHY4oxJCwk1S2DQNECoAhhIhgGrmJhMemvdg06m8Hjw7pwN78o7QiFsSnnUlUqkeJFi+XxAEK6XQ+Vw7KUAy8eDMADyOMFSW4eTpkmNuRcAht4DK22YAA99hARZxOuBIAYcQ6QABJAB2-Rmi2wHF9WQ8mk4Z3ARGSAHs+Ezng6OPr6W1EdVrKRMBJaid-OBmCncmmxD5LNn9cguIFwM3BiGw8wgA) verstärkt? Begründe deine Antwort.
 
 
-- Was wird bei einer Basisschaltung verstärkt (s.42)? Strom: Nein, Spannung: Ja 
-- Begründe deine Antwort
+
+### Basisvorspannung
+
+#### Stromgegenkopplung 
+
+![Emitterschaltung-Stromgegenkopplung](gfx/Emitterschaltung-Stromgegenkopplung.png)
+
+- Wie können wir den Arbeitspunkt stabilisieren? Negatives Feedback stabilisiert
 
 
 
+#### Spannungsgegenkopplung 
 
+[Schaltung](http://falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcA2aAOMB2ALGXyEw1sESQFJzzKEBTAWjDACgB3EAJgWXDA5ADMCfk36RmAJ07de-LjzABOMSGwFmAF0GRs4ZYOF6VEejAFFMHbB0XJc2TAIxRody5kiKEaeR0wIkDjgQABNaADMAQwBXABsNZgBjTkg0I2kFfUoYeDgTGAIEWwJbDw4g5EUXPOYAJRS0pRFkSiaocFVs2AhslzAi-uxFbAFPDmYAcwM5K2ntXWy6uew0-FU03uxW3q6EZgB5cj50lsasqElltKERY+24JNUBEX1CF5Uc3J7YOEU--7+wkwwxGPE+LHY8nSo10bXEUje6URfmM8EmRzklgx83a4nYN1kcywYOYWwEGUExEpumwK3aHAA+nYGdgGXwbJAGQUHDYEJh-GhhMpKlyfpAwAzGGyGQAhSIAZ1oABoADrygBqpMg5LUNLSRVuKkZzOQbPKik5MGK3EsPm8TDGovgEqlEoAwgB7WKxWiJDQeiSqjVa8nIWZgFogfwzBZRpmsznsi2i63IW1cDBgR2fcWSiUsADKRMwPBGIhLuJAUViivpbCezRoxwji3YiJb2LhlyhbShKPaWYe+MMQWuI9m4ms5IJxNUdhAikwFyn2iQSl0vMEwIuUz7WKhMNxzCAA): `Emitterschaltung-Spannungsgegenkopplung.circuitjs.txt`
 
-### Basisvorspannung (siehe google doc)
+![Emitterschaltung-Spannungsgegenkopplung](gfx/Emitterschaltung-Spannungsgegenkopplung.png)
 
-- Stromgegenkopplung (s.46-50)
-  - Wie können wir den Arbeitspunkt stabilisieren? Negatives Feedback stabilisiert
-
-- Spannungsgegenkopplung (s.51)
-  - Was ist neu bei der Spannungsgegenkopplung? $R_1$ wird am Kollektor angeschlossen statt an $U_0$​ 
-  - Wie funktioniert die Spannungsgegenkopplung? 
-    - Antwort: Negatives Feedback -> Stabilisierung: Wenn IC steigt, steigt UR; Wenn UR steigt, sinkt UCE; Wenn UCE sinkt, sinkt auch UBE; Wenn UBE sinkt, sinkt IC
-
-#### Frage #18 & #17
-
-- Basisvorspannungsschaltung zum ausprobieren
-- Werte einstellen wie in Beispiel angegeben -> Output irgendwie anzeigen (in plot?)
-- Wozu dienen $R_I$ und $C_I$ ?
-- Was passiert, wenn man $R_I$ verkleinert? Was passiert, wenn man $U_0$​ erhöht
-- 17A: Die Betriebsspannung beträgt 10V, der Kollektorstrom soll 2mA betragen, die Gleichstromverstärkung des Transistors beträgt 200. RC ist 1 kΩ. Berechne den Widerstand R1.
-- 17B: Im Eingangssignal liegen kurzzeitig 30μA an. Wie verändert sich das Ausgangssignal?
-  - Stellt die Werte ein wie an und begründet eure Antwort
-  - Änderung von $I_C$ und $U_C$ kommt über Koppelkondensator an Ausgang. 
+- Was ist neu bei der Spannungsgegenkopplung? $R_1$ wird am Kollektor angeschlossen statt an $U_0$​ 
+- Wie funktioniert die Spannungsgegenkopplung? 
+  - Antwort: Negatives Feedback -> Stabilisierung: Wenn IC steigt, steigt UR; Wenn UR steigt, sinkt UCE; Wenn UCE sinkt, sinkt auch UBE; Wenn UBE sinkt, sinkt IC
 
 
 
 ### Hochfrequenzverstärker
 
-- [Schaltung von s. 55 ](https://www.multisim.com/content/ni8cHfAF63z7RCYVk4gkuR/hohe-frequenzen/open:) und google doc
+- [Multisim Schaltung von s. 55 ](https://www.multisim.com/content/ni8cHfAF63z7RCYVk4gkuR/hohe-frequenzen/open:) 
+- Falstad bietet leider keine "echten Transistoren" an 
+
+- Was passiert bei hohen Frequenzen? 
+
+- Wie können wir das Problem lösen? spezielle RF-Transistoren mit kleinerer Kapazität 
+
+  -> verringert den Effekt parasitärer Kapazitäten
+
+- Welche Option gibt es wenn eine einzelne Verstärkerschaltung nicht aussreicht? 
+
+  -> Hintereinanderschalten von mehreren Verstärkerstufen
 
 
 
 ### IC555 Timer
 
-slide 63 555 timer IC ([schaltung](https://www.multisim.com/content/4ixUKW3Etz4mmsmbUzpd2R/555-astable/open:) und google doc)
+Schaltung wie in den Folien: `IC555-Timer.circuitjs.txt`, [555 Timer IC](http://falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWEDYCYDMqDsrUE4AOLSAgsJANgBYQtlJkBTAWjDACgB3cMVEXGmz6oEFKOwDGPYaOkhMDBqmgFULOlRXosVOAXSReVAkhhwOAczkLr6MYvYAlOdRAEGrxSF3gvi6AjsAPLyCHxgFAxUmOCRUOJWqKT8skkE-MkOEUhgeHx4YmkgBSBieNB4lVV48LWo7ABOLoK84EnxNTB4HE1Cbel9uXweYHDQ6Hhc4Hn9crzpkFMiYq59nlODM30C4tzbqIIzO4t7RwfT4TMn8qgMEQzoYbEO3MulNDbr3J8ft7OLiVkjxkYjsC3EUjeBhoUKe-lqEAo0AoKKoWAopBMYX0NDMhiWqUJoMguPYAHtwDd4rpKr4oLBeKZ+JT0OTvLFqaMxKN6bU8OjRCJKRx0Ok6AAxCB3XzwECsECOEXpdKS+IQUay+WOeqiymqhgoWpG41UFgLWAIpDygDCAEMAA62iQASwALraAHYSRjsIA) 
 
-- erst in vorprogrammierten circuits schauen 
-- parameter anpassen wie in folien? 
+- Verschieden IC555 Timer findet Ihr unter `Circuits-> 555 Chips`
+  - zum Beispiel die Internals IC555 Timer Chips 
+
+![IC555-Timer](gfx/IC555-Timer.png)
+
+- Welche Widerstände kann man ändern um die Ausgangsfrequenz zu beeinflussen? 
 
 
 
@@ -307,7 +299,4 @@ slide 63 555 timer IC ([schaltung](https://www.multisim.com/content/4ixUKW3Etz4m
 
 ### Pong
 
-Wen es interessiert findet [hier](https://www.falstad.com/pong/index.html) eine Simulation des 1972 von Atari erfundenen Spiels Pong. 
-
-- Noch ein zwei ideen mit clipping und dc offset 
-- github seemoo für pullrequests und änderungen 
+Hier ein Beispiel was mit Falstad alles möglich ist:Wen es interessiert findet [hier](https://www.falstad.com/pong/index.html) eine Simulation des 1972 von Atari erfundenen Spiels Pong. 
