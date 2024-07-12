@@ -7,9 +7,13 @@ Dabei bieten wir eine fertige Schaltung an, die in *CircuitJS1* gebaut wurde und
 Gerne können auch weitere Schaltungen erstellt werden und in einem Github Repository bei SEEMOO hinterlegt werden. Sollte uns Fehler unterlaufen sein können diese unter [kontakt@seemoo.de?]() gemeldet werden. 
 
 - Ein Einstieg in Schaltungen und ET-Gundlagen
-- zum selbst ausprobieren bauen und verstehen
+- Ergänzung zur Vorlesung, zum selbst ausprobieren, Schaltungen bauen, experimentieren und verstehen
 - kennenlernen des Circuit Simulators von Falstad
   - interessantes Tool um Schaltungen jeglicher Art zu bauen und ein besseres Verständnis von Elektrotechnik zu bekommen
+- Der [Index](https://www.falstad.com/circuit/e-index.html) von Falstad, bietet viele vorprogrammierte Schaltungen mit Erklärungen
+- Kurze Einführungsvideos zu Falstad: 
+  - [Einführung und Überblick](https://www.youtube.com/watch?v=0k41Pj8yjSA) 
+  - [Verschieden Schaltungen](https://www.youtube.com/watch?v=jv1k34aIIGc) 
 
 
 
@@ -140,7 +144,7 @@ Hier ist eine einfache Version des [LC Bandpass Filters](http://falstad.com/circ
 
 Datei: `rc-tiefpass-vs-hochpass.txt`
 
-HIer ein Vergleich von [RC Hochpass und RC Tiefpass](http://falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWEAmZ0FmQdgCw4QgBz4LZIKQjmUICmAtGGAFADmIOcIhYAbB12KEoUZgCcUCfrykDKM-pTCFIzAMZyQCzT0VRY8CDByowAZj5MAnMh48++uCwAeKHFnCRMVBB7BekHDcUSAAqABsAe1YAfX8ACiwANQB6fySASgAdAGcsgEcAP1z6MwATACEk5ldkPE9SLSxhfwIOYIAvaAroAC5cgDMY1lyC3LAU5AAHAEtQs3QAawB5AAsAW1CcKwA7ADFR-NybQgAJDrZuB10r-iERVQ1eQmFtG+1KGHgvEAXfM14cEIz1IBCwSC+XnEty0shuN0oZjMNV+YCsVGQ0nqpHRQTqIAASgBhegAFRmtAGUwAhjk8jkAG45aC5Yn0U6RNSrGl05hgLCUZCybT86SyMwhTxcCHQFj8+QvWHSfHaCXIJTwKj6FjLTTaHC8IIfUS695wlRKh7MSIgdFmZAiThWYRWaBWd0e92EBDuXgOyE-QW236Eknkyk8+kASR2UwArgAXa3gCD2x2QZ0cN3OlS8JEUFRWXCOJwiCBs8NU2n05aJ+NJm3+X7+gSZ3joBAAks-CAOpsStkcrmR3Ix+vJ7xpyhO4QLbDPbsQJeh9mc7nV3K1hPjoA). 
+Hier ein Vergleich von [RC Hochpass und RC Tiefpass](http://falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWEAmZ0FmQdgCw4QgBz4LZIKQjmUICmAtGGAFADmIOcIhYAbB12KEoUZgCcUCfrykDKM-pTCFIzAMZyQCzT0VRY8CDByowAZj5MAnMh48++uCwAeKHFnCRMVBB7BekHDcUSAAqABsAe1YAfX8ACiwANQB6fySASgAdAGcsgEcAP1z6MwATACEk5ldkPE9SLSxhfwIOYIAvaAroAC5cgDMY1lyC3LAU5AAHAEtQs3QAawB5AAsAW1CcKwA7ADFR-NybQgAJDrZuB10r-iERVQ1eQmFtG+1KGHgvEAXfM14cEIz1IBCwSC+XnEty0shuN0oZjMNV+YCsVGQ0nqpHRQTqIAASgBhegAFRmtAGUwAhjk8jkAG45aC5Yn0U6RNSrGl05hgLCUZCybT86SyMwhTxcCHQFj8+QvWHSfHaCXIJTwKj6FjLTTaHC8IIfUS695wlRKh7MSIgdFmZAiThWYRWaBWd0e92EBDuXgOyE-QW236Eknkyk8+kASR2UwArgAXa3gCD2x2QZ0cN3OlS8JEUFRWXCOJwiCBs8NU2n05aJ+NJm3+X7+gSZ3joBAAks-CAOpsStkcrmR3Ix+vJ7xpyhO4QLbDPbsQJeh9mc7nV3K1hPjoA). 
 
 ![rc-hochpass-vs-tiefpass](gfx/rc-hochpass-vs-tiefpass.png)
 
@@ -189,11 +193,113 @@ Oben haben wir schon einen Einweggleichrichter gesehen. Hier setzen wir das selb
 
 ## Schaltungen aus Kapitel 3: Elektrotechnik, Transistoren und Oszillatoren
 
-- slide 15 
-- slide 33 ff. basisvorspannung nachbauen?
-- slide 55 probleme bei hohen frequenzen
-- slide 63 555 timer IC 
+- Simulation (slide 15) [multisim link](https://www.multisim.com/content/WZAKpLavpFaADQBNrEhb35/transistor/open:) leider kein gute alternative gefunden 
+- Frage #16 (slide 18)
 - 
+- slide 26 ff. basisvorspannung nachbauen? (Frage #18, Frage #17)
+  - Welche Spannungsquelle können wir stattdessen für Uoffset nutzen? Wie?
+  - Welches Problem entsteht, wenn Ue direkt an die Basis angeschlossen wird?
+  - Was passiert wenn man $U_e$ einfach an die Basis anschlist? -> Kurzschluss
+    - Wie kann man dieses Problem umgehen? -> Kondensator (s.30)
+
+  - Welchen Vorteil bietet ein zusätzlicher Spannungsteiler? wird durch Schwankungen weniger beeinflusst. (s.31)
+- Sättigungsbereich (s.40)
+  - Was passiert wenn an der Basis eine zu hohe Spannung anliegt?
+- - - - 
+- Vollständige Emitterschaltung als Verstärker (s.52)
+  - Was passiert bei hohen Frequenzen? 
+  - Wie können wir das Problem lösen? spezielle RF-Transistoren mit kleinerer Kapazität -> verringert den Effekt parasitärer Kapazitäten
+  - Welche Option gibt es wenn eine einzelne Verstärkerschaltung nicht aussreicht? -> Hintereinanderschalten von mehreren Verstärkerstufen
+  - [Schaltung von s. 55 ](https://www.multisim.com/content/ni8cHfAF63z7RCYVk4gkuR/hohe-frequenzen/open:) und google doc
+- 
+
+## Transistoren 
+
+[PNP Transistor Explanation falstad](https://www.falstad.com/circuit/e-pnp.html) 
+
+### Als Schalter 
+
+- öffne die Schaltung: circuits -> Transistors -> Switch
+- [beispiel von transistor als schalter](https://www.falstad.com/circuit/e-transswitch.html)
+
+![Transistor als Schalter](gfx/Transistor als Schalter.png)
+
+
+
+### Transistorgrundschaltungen 
+
+#### Emitterschaltung 
+
+- 
+
+- Was wird bei einer Emitterschaltung verstärkt (s.39)? Strom Ja, Spannung ja
+- Um welchen Faktor? 200
+- Graphen anzeigen wie auf slide 39
+- Beispiel Falstad [common-emitter amplifier](https://www.falstad.com/circuit/e-ceamp.html)
+
+![Emitterschaltung](gfx/Emitterschaltung.png)
+
+1. Was wird bei der Emitterschaltung verstärkt? 
+
+
+
+#### Kollektorschaltung
+
+Beispiel von Falstad: [emitter follower / buffer amplifier circuit](https://www.falstad.com/circuit/e-follower.html)
+
+![Kollektorschaltung](gfx/Kollektorschaltung.png)
+
+- Was wird bei einer Kollektorschaltung verstärkt?
+- Begründe deine Antwort
+
+
+
+#### Basisschaltung 
+
+
+
+- Was wird bei einer Basisschaltung verstärkt (s.42)? Strom: Nein, Spannung: Ja 
+- Begründe deine Antwort
+
+
+
+
+
+### Basisvorspannung (siehe google doc)
+
+- Stromgegenkopplung (s.46-50)
+  - Wie können wir den Arbeitspunkt stabilisieren? Negatives Feedback stabilisiert
+
+- Spannungsgegenkopplung (s.51)
+  - Was ist neu bei der Spannungsgegenkopplung? $R_1$ wird am Kollektor angeschlossen statt an $U_0$​ 
+  - Wie funktioniert die Spannungsgegenkopplung? 
+    - Antwort: Negatives Feedback -> Stabilisierung: Wenn IC steigt, steigt UR; Wenn UR steigt, sinkt UCE; Wenn UCE sinkt, sinkt auch UBE; Wenn UBE sinkt, sinkt IC
+
+#### Frage #18 & #17
+
+- Basisvorspannungsschaltung zum ausprobieren
+- Werte einstellen wie in Beispiel angegeben -> Output irgendwie anzeigen (in plot?)
+- Wozu dienen $R_I$ und $C_I$ ?
+- Was passiert, wenn man $R_I$ verkleinert? Was passiert, wenn man $U_0$​ erhöht
+- 17A: Die Betriebsspannung beträgt 10V, der Kollektorstrom soll 2mA betragen, die Gleichstromverstärkung des Transistors beträgt 200. RC ist 1 kΩ. Berechne den Widerstand R1.
+- 17B: Im Eingangssignal liegen kurzzeitig 30μA an. Wie verändert sich das Ausgangssignal?
+  - Stellt die Werte ein wie an und begründet eure Antwort
+  - Änderung von $I_C$ und $U_C$ kommt über Koppelkondensator an Ausgang. 
+
+
+
+### Hochfrequenzverstärker
+
+- [Schaltung von s. 55 ](https://www.multisim.com/content/ni8cHfAF63z7RCYVk4gkuR/hohe-frequenzen/open:) und google doc
+
+
+
+### IC555 Timer
+
+slide 63 555 timer IC ([schaltung](https://www.multisim.com/content/4ixUKW3Etz4mmsmbUzpd2R/555-astable/open:) und google doc)
+
+- erst in vorprogrammierten circuits schauen 
+- parameter anpassen wie in folien? 
 
 
 
@@ -202,3 +308,6 @@ Oben haben wir schon einen Einweggleichrichter gesehen. Hier setzen wir das selb
 ### Pong
 
 Wen es interessiert findet [hier](https://www.falstad.com/pong/index.html) eine Simulation des 1972 von Atari erfundenen Spiels Pong. 
+
+- Noch ein zwei ideen mit clipping und dc offset 
+- github seemoo für pullrequests und änderungen 
